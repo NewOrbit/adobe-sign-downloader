@@ -1,16 +1,11 @@
 import getArgs from "./get-args";
 import writeFile from "./write-file";
-const AdobeSignSdk = require("adobe-sign-sdk");
+import getEndpoint from "./get-endpoint";
 
 const args = process.argv.slice(2);
 const { documentType, accessToken, documentId } = getArgs(args);
 
-const context = new AdobeSignSdk.Context();
-const agreements = new AdobeSignSdk.AgreementsApi(context);
-const libraryDocuments = new AdobeSignSdk.LibraryDocumentsApi(context);
-
-// it can either be libraryDocument or agreement - this is checked in getArgs so it's safe to assume here
-const getCombinedDocument = (documentType === "libraryDocument") ? libraryDocuments.getCombinedDocument : agreements.getCombinedDocument;
+const getCombinedDocument = getEndpoint(documentType);
 getCombinedDocument({ accessToken }, documentId)
     .then(a => {
         console.log("about to write");
