@@ -12,5 +12,5 @@ export default (documentType: DocumentType) => {
         ? new AdobeSignSdk.LibraryDocumentsApi(context)
         : new AdobeSignSdk.AgreementsApi(context);
 
-    return api.getCombinedDocument;
+    return api.getCombinedDocument as (headerParams: { accessToken: string }, documentId: string) => Promise<Buffer>;
 };
