@@ -4,6 +4,7 @@
   "description": "Download documents from Adobe Sign",
   "main": "index.js",
   "scripts": {
+    "prepublishOnly": "npm run build && npm run lint",
     "build": "tsc",
     "lint": "tslint -c tslint.json src/**/*.ts"
   },
