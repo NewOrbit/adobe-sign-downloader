@@ -1,12 +1,10 @@
-# @neworbit/adobe-sign-downloader
+# adobe-sign-downloader
 
 This package can be used to download files from Adobe Sign for agreements and library documents.
 
 ## Installation
 
-You will need to [associate @neworbit packages with the NewOrbit MyGet registry](https://github.com/NewOrbit/development-guidelines/blob/master/how-to/npm/associate-%40neworbit-packages-with-myget.md) first.
-
-    npm install -g @neworbit/adobe-sign-downloader
+    npm install -g adobe-sign-downloader
 
 ## Usage
 
