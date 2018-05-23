@@ -1,0 +1,24 @@
+{
+  "name": "adobe-sign-downloader",
+  "version": "1.0.0",
+  "description": "Download documents from Adobe Sign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewOrbit/adobe-sign-downloader.git"
+  },
+  "keywords": [
+    "adobe",
+    "sign",
+    "downloader"
+  ],
+  "author": "James Monger <jameskmonger@hotmail.co.uk> (http://jamesmonger.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NewOrbit/adobe-sign-downloader/issues"
+  },
+  "homepage": "https://github.com/NewOrbit/adobe-sign-downloader#readme"
+}
