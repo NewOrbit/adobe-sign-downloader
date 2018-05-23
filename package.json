@@ -4,7 +4,8 @@
   "description": "Download documents from Adobe Sign",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,9 @@
   },
   "homepage": "https://github.com/NewOrbit/adobe-sign-downloader#readme",
   "devDependencies": {
+    "@neworbit/tslint-config": "^2.0.0",
     "@types/node": "^10.1.2",
+    "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   },
   "dependencies": {
