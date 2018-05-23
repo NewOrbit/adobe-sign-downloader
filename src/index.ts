@@ -11,5 +11,5 @@ const libraryDocuments = new AdobeSignSdk.LibraryDocumentsApi(context);
 libraryDocuments.getCombinedDocument({ accessToken }, documentId)
     .then(a => {
         console.log("about to write");
-        writeFile(a, documentId);
+        writeFile(a, documentId, "libraryDocument");
     });

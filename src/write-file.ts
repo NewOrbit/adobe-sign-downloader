@@ -1,9 +1,12 @@
 import * as fs from "fs";
 import * as path from "path";
+import { DocumentType } from "./document-types";
 const makeDir = require('make-dir');
 
-export default (buffer: Buffer, name: string) => {
-    makeDir("download")
+export default (buffer: Buffer, name: string, subFolder: DocumentType) => {
+    const folderName = path.join("download", subFolder);
+
+    makeDir(folderName)
         .then(folderPath => {
             const filePath = path.join(folderPath, `${name}.pdf`);
             
