@@ -25,9 +25,9 @@
     "url": "https://github.com/NewOrbit/adobe-sign-downloader/issues"
   },
   "homepage": "https://github.com/NewOrbit/adobe-sign-downloader#readme",
-  "devDependencies": {
-    "@neworbit/tslint-config": "^2.0.0",
+  "devDependencies": {    
     "@types/node": "^10.1.2",
+    "neworbit-tslint-config": "^2.0.0",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   },
