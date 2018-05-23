@@ -3,7 +3,7 @@ import * as path from "path";
 import { DocumentType } from "./document-type";
 
 // tslint:disable-next-line:no-var-requires
-const makeDir = require("make-dir");
+const makeDir = require("make-dir") as (name: string) => Promise<string>;
 
 export default (buffer: Buffer, name: string, subFolder: DocumentType) => {
     const folderName = path.join("adobe-sign-downloader", subFolder);
