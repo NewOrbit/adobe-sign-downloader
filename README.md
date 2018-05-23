@@ -1,6 +1,6 @@
 # @neworbit/adobe-sign-downloader
 
-This package can be used to download `.pdf` files from Adobe Sign for agreements and library documents.
+This package can be used to download files from Adobe Sign for agreements and library documents.
 
 ## Installation
 
@@ -14,14 +14,10 @@ You will need to [associate @neworbit packages with the NewOrbit MyGet registry]
 
     adobe-sign-downloader agreement abc123 def456
 
-### `documentType`
-
 `documentType` is the type of document you want to download - either `agreement` or `libraryDocument` (case sensitive).
-
-### `accessToken`
 
 `accessToken` is your Adobe Sign access token.
 
-### `documentId`
-
 `documentId` is the ID of the document you wish to download.
+
+This will create a folder `download` in your current directory, and will place the downloaded PDF there.
