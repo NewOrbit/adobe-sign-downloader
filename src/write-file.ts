@@ -6,7 +6,7 @@ import { DocumentType } from "./document-type";
 const makeDir = require("make-dir");
 
 export default (buffer: Buffer, name: string, subFolder: DocumentType) => {
-    const folderName = path.join("download", subFolder);
+    const folderName = path.join("adobe-sign-downloader", subFolder);
 
     makeDir(folderName)
         .then(folderPath => {

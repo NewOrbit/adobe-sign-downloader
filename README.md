@@ -20,4 +20,4 @@ You will need to [associate @neworbit packages with the NewOrbit MyGet registry]
 
 `documentId` is the ID of the document you wish to download.
 
-This will create a folder `download` in your current directory, and will place the downloaded PDF there.
+This will create a folder `adobe-sign-downloader` in your current directory, and will place the downloaded PDF there.
