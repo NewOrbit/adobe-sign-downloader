@@ -13,7 +13,9 @@ export default (buffer: Buffer, name: string, subFolder: DocumentType) => {
             const filePath = path.join(folderPath, `${name}.pdf`);
 
             fs.writeFile(filePath, buffer, (err) => {
-                if (err) { throw err; }
+                if (err) {
+                    throw err;
+                }
 
                 console.log(`File saved as '${filePath}'`);
               });
