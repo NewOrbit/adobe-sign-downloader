@@ -19,3 +19,7 @@ This package can be used to download files from Adobe Sign for agreements and li
 `documentId` is the ID of the document you wish to download.
 
 This will create a folder `adobe-sign-downloader` in your current directory, and will place the downloaded PDF there.
+
+## License
+
+Made with :sparkling_heart: by [NewOrbit](https://www.neworbit.co.uk/) in Oxfordshire, and licensed under the [MIT Licence](LICENCE)
