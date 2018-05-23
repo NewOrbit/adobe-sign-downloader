@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/NewOrbit/adobe-sign-downloader/issues"
   },
-  "homepage": "https://github.com/NewOrbit/adobe-sign-downloader#readme"
+  "homepage": "https://github.com/NewOrbit/adobe-sign-downloader#readme",
+  "devDependencies": {
+    "@types/node": "^10.1.2",
+    "typescript": "^2.8.3"
+  }
 }
