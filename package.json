@@ -1,5 +1,5 @@
 {
-  "name": "adobe-sign-downloader",
+  "name": "@neworbit/adobe-sign-downloader",
   "version": "1.0.0",
   "description": "Download documents from Adobe Sign",
   "main": "index.js",
