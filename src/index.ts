@@ -12,6 +12,6 @@ getCombinedDocument({ accessToken }, documentId)
         writeFile(a, documentId, documentType);
     })
     .catch(err => {
-        console.log("An error occured when getting the document:")
+        console.log("An error occured when getting the document:");
         console.log(`${err.errorMessage} (${err.apiCode} - ${err.httpCode})`);
     });

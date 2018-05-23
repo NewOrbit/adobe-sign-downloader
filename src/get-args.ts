@@ -10,13 +10,13 @@ const exitWithInfo = () => {
 };
 
 export default (input: string[]) => {
-    if (input.length != 3) {
+    if (input.length !== 3) {
         exitWithInfo();
     }
 
     const [ documentType, accessToken, documentId ] = input;
 
-    if (documentType !== 'libraryDocument' && documentType !== 'agreement') {
+    if (documentType !== "libraryDocument" && documentType !== "agreement") {
         exitWithInfo();
     }
 
@@ -24,5 +24,5 @@ export default (input: string[]) => {
         documentType: (documentType as DocumentType),
         accessToken,
         documentId
-    }
+    };
 };
