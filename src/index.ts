@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import getArgs from "./get-args";
 import writeFile from "./write-file";
 import getEndpoint from "./get-endpoint";
