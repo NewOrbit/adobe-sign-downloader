@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { DocumentType } from "./document-types";
+import { DocumentType } from "./document-type";
 const makeDir = require('make-dir');
 
 export default (buffer: Buffer, name: string, subFolder: DocumentType) => {

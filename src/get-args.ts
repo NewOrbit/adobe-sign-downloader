@@ -1,3 +1,5 @@
+import { DocumentType } from "./document-type";
+
 const exitWithInfo = () => {
     console.log("Usage:");
     console.log("    adobe-sign-downloader [documentType] [accessToken] [documentId]");
@@ -19,7 +21,7 @@ export default (input: string[]) => {
     }
 
     return {
-        documentType,
+        documentType: (documentType as DocumentType),
         accessToken,
         documentId
     }
